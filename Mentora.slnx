@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Mentora.Domin/Mentora.Domain.csproj" />
+  <Project Path="Mentora.InfraStructure/Mentora.InfraStructure.csproj" />
+  <Project Path="Mentora.Servises/Mentora.Servises.csproj" />
+  <Project Path="Mentora/Mentora.Api.csproj" />
+</Solution>
