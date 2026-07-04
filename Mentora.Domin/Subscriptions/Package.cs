@@ -18,7 +18,7 @@ namespace Mentora.Domin.Subscriptions
 
         public int? MaxStorageInGB { get; set; }
 
-        public bool IsActive { get; set; }
+        public bool IsActive { get; set; } = true;
 
         public ICollection<Subscription> Subscriptions { get; set; }
       = new List<Subscription>();

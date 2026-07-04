@@ -9,8 +9,9 @@ namespace Mentora.Domain.Courses
         public string Description { get; set; } = string.Empty;
         public string ImageCourseUrl { get; set; } = string.Empty;
         public decimal Price { get; set; }
-        public bool IsPublished { get; set; }
-       // public string Level { get; set; } Entity
+        public bool IsPublished { get; set; } = true;
+        public string LevelId { get; set; } = string.Empty;
+        public Level level { get; set; } = default!;
         public string OwnerId { get; set; } = string.Empty;
         public ApplicationUser Owner { get; set; } = default!;
         public ICollection<Module> Modules { get; set; } = new List<Module>();

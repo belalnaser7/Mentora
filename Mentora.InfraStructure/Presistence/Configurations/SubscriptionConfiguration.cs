@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mentora.InfraStructure.Configurations
+namespace Mentora.InfraStructure.Presistence.Configurations
 {
     public class SubscriptionConfiguration : IEntityTypeConfiguration<Subscription>
     {

@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mentora.InfraStructure
+namespace Mentora.InfraStructure.Presistence
 {
     public class Mentora : IdentityDbContext<ApplicationUser>
     {
-
+        
 
         public Mentora(DbContextOptions<Mentora> options) : base(options)
         {
