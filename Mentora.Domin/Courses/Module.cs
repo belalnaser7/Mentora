@@ -1,4 +1,6 @@
-﻿using Mentora.Domin.Common;
+﻿
+using Mentora.Domain.Courses.Lessons;
+using Mentora.Domin.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +14,12 @@ namespace Mentora.Domain.Courses
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public bool IsPublished { get; set; }
-        public long CourseId { get; set; }
-        public int order { get; set; }
+        public int CourseId { get; set; }
+        public float? Price { get; set; } 
+        public int Order { get; set; }
         public Course Course { get; set; } = default!;
         public ICollection<Lesson> Lessons { get; set; } = new List<Lesson>();
-        public ICollection<Module> Modules { get; set; } = new List<Module>();
+        public ICollection<EnrollmentModule> EnrollmentModules { get; set; } = new List<EnrollmentModule>();
+        public ICollection<CourseAccessCodeModule> CourseAccessCodeModules { get; set; } = new List<CourseAccessCodeModule>();
     }
 }

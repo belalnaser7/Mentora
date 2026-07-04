@@ -5,7 +5,7 @@ namespace Mentora.Domain.Courses
 {
     public class CourseAccessCode:BaseEntity
     {
-        public Guid Code { get; set; }
+        public string Code { get; set; }
       //  public int CourseId { get; set; }
         public bool IsUsed { get; set; } = false;
         public string? UserId { get; set; }
@@ -15,6 +15,7 @@ namespace Mentora.Domain.Courses
        // public Course Course { get; set; } = default!;
        public Module module { get; set; } = default!;
         public ApplicationUser? User { get; set; }
+        public ICollection<CourseAccessCodeModule> CourseAccessCodeModules { get; set; } = new List<CourseAccessCodeModule>();
     }
 }
 
